@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <UseWindowsForms>true</UseWindowsForms>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Update="PlayerSelectionControl.cs">
+        <SubType>UserControl</SubType>
+      </Compile>
+      <Compile Update="StartControl.cs">
+        <SubType>UserControl</SubType>
+      </Compile>
+      <Compile Update="BattleControl.cs">
+        <SubType>UserControl</SubType>
+      </Compile>
+      <Compile Update="FinishControl.cs">
+        <SubType>UserControl</SubType>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Resources\grass.png" />
+      <Resource Include="Resources\grass.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Resource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="obj\Debug\netcoreapp3.1" />
+    </ItemGroup>
+
+</Project>
